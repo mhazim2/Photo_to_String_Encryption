@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $command = escapeshellcmd('venv27\Scripts\python.exe encrypt.py '.$password);
                     $output = shell_exec($command);
                     echo $output;
+                header("Location: ");
                 exit;
             }
             break;
